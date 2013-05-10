@@ -1,0 +1,24 @@
+RECOVER*.fla
+.sass-cache
+*.as3proj
+
+bin-debug/*
+bin-release/*
+
+# OS Crap
+.DS_Store
+thumbs.db
+.*.swp
+*.tmproj
+*.mwb
+*.mwb.bak
+*.sublime-*
+
+# SCM files
+.arch-params
+.bzr
+_darcs
+.hg
+.monotone
+.svn
+.project

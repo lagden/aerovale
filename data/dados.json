@@ -1,0 +1,116 @@
+{
+    "cidades": {
+        "São Paulo": {
+            "coords": {
+                  "lat": 100
+                , "lon": 100
+            }
+            ,"aeroportos": {
+                "Aeroporto Congonhas": {
+                      "endereco": "Av. Washington Luiz, s/n - São Paulo, SP"
+                    , "flights": {
+                        "Rio de Janeiro": [
+                            {
+                                "dia": "segunda"
+                                , "partida": "10:10"
+                                , "chegada": "11:10"
+                            }
+                            ,{
+                                "dia": "quarta"
+                                , "partida": "13:10"
+                                , "chegada": "14:10"
+                            }
+                            ,{
+                                "dia": "sexta"
+                                , "partida": "17:10"
+                                , "chegada": "18:10"
+                            }
+                        ]
+                    }
+                }
+                , "Aeroporto Cumbica": {
+                      "endereco": "Rodovia Hélio Smidt, s/n - Guarulhos, SP"
+                    , "flights": {
+                        "Curitiba": [
+                            {
+                                  "dia": "segunda"
+                                , "partida": "10:10"
+                                , "chegada": "11:10"
+                            }
+                            ,{
+                                  "dia": "quarta"
+                                , "partida": "13:10"
+                                , "chegada": "14:10"
+                            }
+                            ,{
+                                  "dia": "sexta"
+                                , "partida": "17:10"
+                                , "chegada": "18:10"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+        , "Rio de Janeiro": {
+            "coords": {
+                  "lat": 200
+                , "lon": 200
+            }
+            ,"aeroportos": {
+                "Aeroporto Santos Dumont": {
+                      "endereco": " Praça Sen. Salgado Filho, s/n - Rio de Janeiro, RJ"
+                    , "flights": {
+                        "São Paulo": [
+                            {
+                                "dia": "segunda"
+                                , "partida": "10:10"
+                                , "chegada": "11:10"
+                            }
+                            ,{
+                                "dia": "quarta"
+                                , "partida": "13:10"
+                                , "chegada": "14:10"
+                            }
+                            ,{
+                                "dia": "sexta"
+                                , "partida": "17:10"
+                                , "chegada": "18:10"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+        , "Curitiba": {
+            "coords": {
+                  "lat": 300
+                , "lon": 300
+            }
+            ,"aeroportos": {
+                "Aeroporto Afonso Pena": {
+                      "endereco": " Av. Rocha Pombo, s/n - São José dos Pinhais, PR"
+                    , "flights": {
+                        "São Paulo": [
+                            {
+                                "dia": "segunda"
+                                , "partida": "10:10"
+                                , "chegada": "11:10"
+                            }
+                            ,{
+                                "dia": "quarta"
+                                , "partida": "13:10"
+                                , "chegada": "14:10"
+                            }
+                            ,{
+                                "dia": "sexta"
+                                , "partida": "17:10"
+                                , "chegada": "18:10"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}
