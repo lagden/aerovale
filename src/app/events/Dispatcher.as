@@ -5,8 +5,8 @@ package app.events
 	
 	public class Dispatcher extends EventDispatcher
 	{
-		public const ON_UPLOAD:String = "onUpload";
-		public const ON_UPLOAD_COMPLETE:String = "onUploadComplete";
+		public const ON_ORIGEM:String = "onOrigem";
+		public const ON_DESTINO:String = "onDestino";
 		public const ON_LOADING_SHOW:String = "onLoadingShow";
 		public const ON_LOADING_HIDE:String = "onLoadingHide";
 		
@@ -20,8 +20,8 @@ package app.events
 			dispatchEvent(new Event(event));
 		}
 		
-		public function upload():void { dispacha(ON_UPLOAD); }
-		public function uploadComplete():void { dispacha(ON_UPLOAD_COMPLETE); }
+		public function origem():void { dispacha(ON_ORIGEM); }
+		public function destino():void { dispacha(ON_DESTINO); }
 		public function loading(valor:Boolean = false):void
 		{
 			(valor) ? dispacha(ON_LOADING_SHOW) : dispacha(ON_LOADING_HIDE);
