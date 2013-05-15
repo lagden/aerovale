@@ -1,0 +1,56 @@
+@import "compass";
+
+$orange: #ebac12;
+$gray: #f7f7f7;
+
+@function strip-units($number) {
+    @return $number / ($number * 0 + 1);
+}
+
+@function relative-size($size, $context, $unit:rem) {
+    @return #{strip-units($size)/strip-units($context)}$unit;
+}
+
+@mixin attr-size($attr, $size, $base:16, $unit:rem) {
+    #{$attr}: #{$size}px;
+    #{$attr}: relative-size($size, $base, $unit);
+}
+
+.mlg{
+    margin-left: 10px;
+}
+
+// Filtro
+.frmFiltroAeronave{
+    position: relative;
+    z-index: 800;
+    .frm-actions,
+    .frm-grupo{
+        @extend .mlg;
+        @include inline-block;
+        vertical-align: baseline;
+    }
+
+    .frm-controle{
+        position: relative;
+    }
+
+    label{
+        color: $orange;
+    }
+
+    select{
+        @include attr-size('min-width',170);
+    }
+
+    input[type=text]
+    {
+        @include box-sizing(border-box);
+        @include attr-size('max-width',100);
+        @include attr-size('height',32);
+    }
+
+    button{
+        @include attr-size('min-width',70);
+    }
+}

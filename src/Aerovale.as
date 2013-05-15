@@ -68,7 +68,7 @@ package
 			this._app['objs']['destino'] = null;
 			
 //			var dados:String = (LocationUtil.isWeb(this.stage)) ? "dados.js" : "data/dados.js";
-			var dados:String = "data/dados.js";
+			var dados:String = "data/dadosJuninho.js";
 			
 			this._dataLoad = new DataLoad(dados);			
 			this._dataLoad.addEventListener(IOErrorEvent.IO_ERROR, this._onError);
@@ -112,11 +112,26 @@ package
 			this._dados = JSON.parse(this._dataLoad.dataAsString);
 			
 			this._app['objs']['pontos'] = {};
-			if(ObjectUtil.contains(this._dados,this._dados.cidades) && ObjectUtil.contains(this._dados,this._dados.flights))
+			if(ObjectUtil.contains(this._dados,this._dados.cidades) && ObjectUtil.contains(this._dados,this._dados.voos))
 			{
-				this._app['objs']['cidades'] = this._dados.cidades;
-				this._app['objs']['flights'] = this._dados.flights;
-				for(var i:String in this._dados.cidades)
+				var parseCidades:Object = {};
+				for each (var cidade:Object in this._dados.cidades)
+					parseCidades[cidade.sigla] = {
+						"nome": cidade.nome,
+						"coords": {
+							"lat": cidade.lat,
+							"lon": cidade.lon
+						}
+					};
+
+				var parseFlights:Object = {};
+				for each (var flight:Object in this._dados.voos)
+					parseFlights[flight.origem] = flight.destinos;
+
+				this._app['objs']['cidades'] = parseCidades;
+				this._app['objs']['flights'] = parseFlights;
+				
+				for(var i:String in parseCidades)
 				{
 					trace('Local:', i);
 					this._app['objs']['pontos'][i] = new Ponto(i, this._dispatcher); 

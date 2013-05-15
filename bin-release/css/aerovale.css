@@ -1,0 +1,42 @@
+/* line 19, ../sass/aerovale.scss */
+.mlg, .frmFiltroAeronave .frm-actions,
+.frmFiltroAeronave .frm-grupo {
+  margin-left: 10px; }
+
+/* line 24, ../sass/aerovale.scss */
+.frmFiltroAeronave {
+  position: relative;
+  z-index: 800; }
+  /* line 28, ../sass/aerovale.scss */
+  .frmFiltroAeronave .frm-actions,
+  .frmFiltroAeronave .frm-grupo {
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    zoom: 1;
+    *display: inline;
+    vertical-align: baseline; }
+  /* line 34, ../sass/aerovale.scss */
+  .frmFiltroAeronave .frm-controle {
+    position: relative; }
+  /* line 38, ../sass/aerovale.scss */
+  .frmFiltroAeronave label {
+    color: #ebac12; }
+  /* line 42, ../sass/aerovale.scss */
+  .frmFiltroAeronave select {
+    min-width: 170px;
+    min-width: 10.625rem; }
+  /* line 47, ../sass/aerovale.scss */
+  .frmFiltroAeronave input[type=text] {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    max-width: 100px;
+    max-width: 6.25rem;
+    height: 32px;
+    height: 2rem; }
+  /* line 53, ../sass/aerovale.scss */
+  .frmFiltroAeronave button {
+    min-width: 70px;
+    min-width: 4.375rem; }

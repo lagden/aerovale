@@ -125,7 +125,7 @@
 			this._dispatcher.origem();
 			
 			// Executa o javascript
-			ExternalInterface.call("destinos");
+			ExternalInterface.call("destinosDe", this._app['objs']['origem']);
 		}
 		
 		// listener da origem - Faz as animações das linhas e pontos
@@ -136,6 +136,8 @@
 			
 			this._handler.visible = false;
 			this.isDestino = false;
+			
+			this.cleanup();
 			
 			// Verifica se é o ponto de origem
 			this.isOrigem = (this.code == this._app['objs']['origem']);

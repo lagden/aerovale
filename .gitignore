@@ -3,7 +3,8 @@ RECOVER*.fla
 *.as3proj
 
 bin-debug/*
-bin-release/*
+bin-release/srcview
+bin-release/Aerovale.html
 
 # OS Crap
 .DS_Store
