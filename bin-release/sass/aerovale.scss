@@ -2,6 +2,12 @@
 
 $orange: #ebac12;
 $gray: #f7f7f7;
+$white: #FFFFFF;
+
+$base-spacing-unit: 10px;
+$base-font-size: 16px!default;
+$base-line-height:  24px!default;
+$line-height-ratio: $base-line-height / $base-font-size;
 
 @function strip-units($number) {
     @return $number / ($number * 0 + 1);
@@ -16,8 +22,24 @@ $gray: #f7f7f7;
     #{$attr}: relative-size($size, $base, $unit);
 }
 
+$ico-layout: horizontal;
+@import "sprites/ico/*.png";
+@include all-ico-sprites(true);
+
+html{
+    font:#{($base-font-size/16px)*1em}/#{$line-height-ratio} serif;
+    overflow-y:scroll;
+    min-height:100%;
+}
+
 .mlg{
     margin-left: 10px;
+}
+
+.direcaoAerovale{
+    background-color: $orange;
+    color: $white;
+    @include attr-size('padding',20);
 }
 
 // Filtro
@@ -52,5 +74,52 @@ $gray: #f7f7f7;
 
     button{
         @include attr-size('min-width',70);
+    }
+}
+
+.media{
+    display:block;
+    @extend .cf;
+}
+
+.media__img{
+    float:left;
+    margin-right:$base-spacing-unit;
+}
+
+.media__img img{
+    display:block;
+}
+    
+.media__body{
+    overflow:hidden;
+}
+
+.media__body,
+.media__body > :last-child{
+    margin-bottom:0;
+}
+
+.split{
+    text-align:right;
+    list-style:none;
+    margin-left:0;
+}
+
+.split__title{
+    text-align:left;
+    float:left;
+    clear:left;
+}
+
+.resultadoAerovale{
+    table{
+        width: 100%;
+        background-color: $gray;
+        margin-top: 10px;
+        td{
+            vertical-align: top;
+            padding: 20px 5px;
+        }
     }
 }
