@@ -1,0 +1,66 @@
+{
+    "cidades": [
+        {
+            "id": 5,
+            "nome": "Belo Horizonte",
+            "lat": 1231,
+            "lon": 12312,
+            "sigla": "BHZ",
+            "aeroporto": {
+                "id": 1,
+                "nome": "Aeroporto de Carapicuiba",
+                "endereco": "Rua Santa Marta",
+                "observacao": "Obervação Teste"
+            }
+        },
+        {
+            "id": 6,
+            "nome": "Rio de Janeiro",
+            "lat": 123456,
+            "lon": 123456,
+            "sigla": "RIO",
+            "aeroporto": {
+                "id": 1,
+                "nome": "Aeroporto de Carapicuiba",
+                "endereco": "Rua Santa Marta",
+                "observacao": "Obervação Teste"
+            }
+        },
+        {
+            "id": 7,
+            "nome": "Carajás",
+            "lat": 123456,
+            "lon": 123456,
+            "sigla": "CKS",
+            "aeroporto": {
+                "id": 1,
+                "nome": "Aeroporto de Carapicuiba",
+                "endereco": "Rua Santa Marta",
+                "observacao": "Obervação Teste"
+            }
+        }
+    ],
+    "voos": [
+        {
+            "origem": "BHZ",
+            "destinos": [
+                "RIO",
+                "CKS",
+                "CKS"
+            ]
+        },
+        {
+            "origem": "RIO",
+            "destinos": [
+                "BHZ"
+            ]
+        },
+        {
+            "origem": "CKS",
+            "destinos": [
+                "BHZ",
+                "BHZ"
+            ]
+        }
+    ]
+}

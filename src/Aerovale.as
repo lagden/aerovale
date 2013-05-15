@@ -25,6 +25,7 @@ package
 	import org.casalib.time.Interval;
 	import org.casalib.util.AlignUtil;
 	import org.casalib.util.FlashVarUtil;
+	import org.casalib.util.LocationUtil;
 	import org.casalib.util.ObjectUtil;
 	import org.casalib.util.StageReference;
 	
@@ -42,9 +43,6 @@ package
 		private var _mapa:Mapa;
 		
 		private var _delay:Number = 0;
-		
-		// temp
-		private var interval:Interval;
 			
 		public function Aerovale()
 		{
@@ -67,9 +65,12 @@ package
 			this._app['objs']['w'] = 700;
 			this._app['objs']['h'] = 670;
 			this._app['objs']['origem'] = null;
-			this._app['objs']['destino'] = "CKS";
+			this._app['objs']['destino'] = null;
 			
-			this._dataLoad = new DataLoad("../data/dados.json");			
+//			var dados:String = (LocationUtil.isWeb(this.stage)) ? "dados.js" : "data/dados.js";
+			var dados:String = "data/dados.js";
+			
+			this._dataLoad = new DataLoad(dados);			
 			this._dataLoad.addEventListener(IOErrorEvent.IO_ERROR, this._onError);
 			this._dataLoad.addEventListener(LoadEvent.COMPLETE, this._onComplete);
 			this._dataLoad.start();
@@ -117,7 +118,7 @@ package
 				this._app['objs']['flights'] = this._dados.flights;
 				for(var i:String in this._dados.cidades)
 				{
-					trace(i);
+					trace('Local:', i);
 					this._app['objs']['pontos'][i] = new Ponto(i, this._dispatcher); 
 					this._mapa.addChild(this._app['objs']['pontos'][i]);
 				}
@@ -125,23 +126,35 @@ package
 			trace("Data has loaded.");
 			this._dataLoad.destroy();
 			
-			this.interval = Interval.setInterval(this.intervaloTeste, 2000, "BHZ");
-			this.interval.repeatCount = 0;
-			this.interval.start();
+			this._dispatcher.addEventListener(_dispatcher.ON_SWAP, swap);
+			
+			// Filtro via javascript
+			ExternalInterface.addCallback("origemDestino", filtro);
 		}
 		
-		private function intervaloTeste(s:String):void
+		// Dispara o filtro
+		private function filtro(o:String, d:String):void
 		{
-			this.interval.stop();
-			this._app['objs']['origem'] = s;
+			this._app['objs']['origem'] = o;
+			this._app['objs']['destino'] = d;
 			this._dispatcher.origem();
-			
-			// Troca a posição
-			var pos:int = this._mapa.getChildIndex(this._app['objs']['pontos'][s]);
-			if(pos > 1)
+		}
+		
+		// Troca a posição
+		private function swap(e:Event):void
+		{
+			if(this._app['objs']['origem'] != null)
 			{
-				this._mapa.swapChildrenAt(1, pos);
-			}
+				var o:String = this._app['objs']['origem'];
+				if(ObjectUtil.contains(this._app['objs']['pontos'],this._app['objs']['pontos'][o]))
+				{
+					var pos:int = this._mapa.getChildIndex(this._app['objs']['pontos'][o]);
+					if(pos > 1)
+					{
+						this._mapa.swapChildrenAt(1, pos);
+					}
+				}
+			}			
 		}
 	}
 }

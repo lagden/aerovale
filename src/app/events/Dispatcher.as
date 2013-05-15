@@ -7,8 +7,9 @@ package app.events
 	{
 		public const ON_ORIGEM:String = "onOrigem";
 		public const ON_DESTINO:String = "onDestino";
-		public const ON_LOADING_SHOW:String = "onLoadingShow";
-		public const ON_LOADING_HIDE:String = "onLoadingHide";
+		public const ON_SWAP:String = "onSwap";
+		public const ON_LIGADO:String = "onLigado"
+		public const ON_DESLIGADO:String = "onDesligado";
 		
 		public function Dispatcher()
 		{
@@ -22,9 +23,10 @@ package app.events
 		
 		public function origem():void { dispacha(ON_ORIGEM); }
 		public function destino():void { dispacha(ON_DESTINO); }
-		public function loading(valor:Boolean = false):void
+		public function swap():void { dispacha(ON_SWAP); }
+		public function trigger(valor:Boolean = false):void
 		{
-			(valor) ? dispacha(ON_LOADING_SHOW) : dispacha(ON_LOADING_HIDE);
+			(valor) ? dispacha(ON_LIGADO) : dispacha(ON_DESLIGADO);
 		}
 	}
 }
