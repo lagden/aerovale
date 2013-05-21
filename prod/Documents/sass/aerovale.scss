@@ -97,7 +97,7 @@ html{
     .frm-grupo{
         position: relative;
         vertical-align: baseline;
-        margin-right: 40px;
+        margin-right: 10px;
         float: left;
         min-height: 60px;
     }
@@ -125,29 +125,34 @@ html{
     button{
         @include attr-size('min-width',70);
         position: absolute;
-        bottom: 5px;
+        left: -30px;
+        bottom: 10px;
         cursor:pointer;
+        z-index: 10;
         &:active{
-            bottom: 4px;
+            bottom: 9px;
         }
     }
 }
 
 .theCombo{
     @include ellipsis;
-    @include box-sizing(border-box);
-    @include border-radius(3px);
+    // @include box-sizing(border-box);
+    // @include border-radius(3px);
     @include attr-size('font-size',12);
-    @include attr-size('padding',4);
+    @include attr-size('padding-left',6);
     @include attr-size('padding-right',40);
-    @include attr-size('width',170);
-    border: thin solid darken($gray, 13.7%);
+    // @include attr-size('width',270);
+    width: 280px;
+    @include attr-size('height',28);
+    @include attr-size('line-height',28);
+    // border: thin solid darken($gray, 13.7%);
     white-space: nowrap;
     overflow: hidden;
     background:{
-        image: image_url('sprites/ico/bullet-down.png');
+        image: image_url('combo.png');
         repeat: no-repeat;
-        position:95% 50%;
+        position:0 0;
         color: transparent;
     };
     color: inherit;

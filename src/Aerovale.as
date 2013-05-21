@@ -80,18 +80,22 @@ package
 			this._bgMapa.addEventListener(Event.ADDED_TO_STAGE,anima);
 			this.addChild(this._bgMapa);
 			
+			//*
 			this._mapa = new Mapa();
 			this._mapa.alpha = 0;
 			this._mapa.addEventListener(Event.ADDED_TO_STAGE,anima);
 			AlignUtil.alignMiddleCenter(this._mapa, new Rectangle(0, 0, this._app['objs']['w'], this._app['objs']['h']));
+			var mapa:* = this._mapa.getChildAt(0);
+			mapa.alpha = 0;
 			this.addChild(this._mapa);
+			//*/
 			
 			// Helper para fazer o mapeamento (Dev)
-			// this.addEventListener(MouseEvent.MOUSE_MOVE,coords);
+			 this.addEventListener(MouseEvent.MOUSE_MOVE,coords);
 		}
 		
 		private function coords(e:MouseEvent):void{
-			trace(e.localX, e.localY);
+//			trace(e.localX, e.localY);
 		}
 		
 		private function anima(e:Event):void
@@ -159,6 +163,7 @@ package
 		// Troca a posição
 		private function swap(e:Event):void
 		{
+			//*
 			if(this._app['objs']['origem'] != null)
 			{
 				var o:String = this._app['objs']['origem'];
@@ -170,7 +175,8 @@ package
 						this._mapa.swapChildrenAt(1, pos);
 					}
 				}
-			}			
+			}
+			//*/
 		}
 	}
 }

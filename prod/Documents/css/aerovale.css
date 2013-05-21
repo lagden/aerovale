@@ -96,7 +96,7 @@ html {
   .frmFiltroAeronave .frm-grupo {
     position: relative;
     vertical-align: baseline;
-    margin-right: 40px;
+    margin-right: 10px;
     float: left;
     min-height: 60px; }
   /* line 105, ../sass/aerovale.scss */
@@ -120,80 +120,76 @@ html {
     min-width: 70px;
     min-width: 4.375rem;
     position: absolute;
-    bottom: 5px;
-    cursor: pointer; }
-    /* line 130, ../sass/aerovale.scss */
+    left: -30px;
+    bottom: 10px;
+    cursor: pointer;
+    z-index: 10; }
+    /* line 132, ../sass/aerovale.scss */
     .frmFiltroAeronave button:active {
-      bottom: 4px; }
+      bottom: 9px; }
 
-/* line 136, ../sass/aerovale.scss */
+/* line 138, ../sass/aerovale.scss */
 .theCombo {
   white-space: nowrap;
   overflow: hidden;
   -ms-text-overflow: ellipsis;
   -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
-  border-radius: 3px;
   font-size: 12px;
   font-size: 0.75rem;
-  padding: 4px;
-  padding: 0.25rem;
+  padding-left: 6px;
+  padding-left: 0.375rem;
   padding-right: 40px;
   padding-right: 2.5rem;
-  width: 170px;
-  width: 10.625rem;
-  border: thin solid #d4d4d4;
+  width: 280px;
+  height: 28px;
+  height: 1.75rem;
+  line-height: 28px;
+  line-height: 1.75rem;
   white-space: nowrap;
   overflow: hidden;
-  background-image: url('../images/sprites/ico/bullet-down.png?1369156007');
+  background-image: url('../images/combo.png?1369171143');
   background-repeat: no-repeat;
-  background-position: 95% 50%;
+  background-position: 0 0;
   background-color: transparent;
   color: inherit;
   cursor: pointer; }
 
-/* line 157, ../sass/aerovale.scss */
+/* line 162, ../sass/aerovale.scss */
 .media {
   display: block; }
 
-/* line 162, ../sass/aerovale.scss */
+/* line 167, ../sass/aerovale.scss */
 .media__img {
   float: left;
   margin-right: 10px; }
 
-/* line 167, ../sass/aerovale.scss */
+/* line 172, ../sass/aerovale.scss */
 .media__img img {
   display: block; }
 
-/* line 171, ../sass/aerovale.scss */
+/* line 176, ../sass/aerovale.scss */
 .media__body {
   overflow: hidden; }
 
-/* line 176, ../sass/aerovale.scss */
+/* line 181, ../sass/aerovale.scss */
 .media__body,
 .media__body > :last-child {
   margin-bottom: 0; }
 
-/* line 181, ../sass/aerovale.scss */
+/* line 186, ../sass/aerovale.scss */
 .resultadoAerovale ul {
   margin: 0;
   padding: 0;
   list-style: none; }
-  /* line 185, ../sass/aerovale.scss */
+  /* line 190, ../sass/aerovale.scss */
   .resultadoAerovale ul li {
     padding: 20px;
     padding: 1.25rem;
     background-color: #f7f7f7;
     margin-top: 10px;
     border: 1px solid #EEE; }
-    /* line 190, ../sass/aerovale.scss */
+    /* line 195, ../sass/aerovale.scss */
     .resultadoAerovale ul li .handlerLista {
       min-height: 25px;
       line-height: 25px;
@@ -201,19 +197,19 @@ html {
       background-image: url('../images/sprites/ico/seta-close.png?1368687031');
       background-repeat: no-repeat;
       background-position: 100% 50%; }
-      /* line 199, ../sass/aerovale.scss */
+      /* line 204, ../sass/aerovale.scss */
       .resultadoAerovale ul li .handlerLista.open {
         background-image: url('../images/sprites/ico/seta-open.png?1368687094'); }
-    /* line 205, ../sass/aerovale.scss */
+    /* line 210, ../sass/aerovale.scss */
     .resultadoAerovale ul li .contentLista {
       display: none; }
-/* line 210, ../sass/aerovale.scss */
+/* line 215, ../sass/aerovale.scss */
 .resultadoAerovale table {
   width: 100%;
   background-color: #f7f7f7;
   margin-top: 10px;
   table-layout: fixed; }
-  /* line 215, ../sass/aerovale.scss */
+  /* line 220, ../sass/aerovale.scss */
   .resultadoAerovale table td {
     vertical-align: top;
     padding: 20px;
