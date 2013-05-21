@@ -9,16 +9,18 @@ $base-font-size: 16px!default;
 $base-line-height:  24px!default;
 $line-height-ratio: $base-line-height / $base-font-size;
 
+// Functions
 @function strip-units($number) {
     @return $number / ($number * 0 + 1);
 }
 
-@function relative-size($size, $context, $unit:rem) {
-    @return #{strip-units($size)/strip-units($context)}$unit;
+@function relative-size($size, $base:16, $unit:rem) {
+    @return #{strip-units($size)/strip-units($base)}$unit;
 }
 
+// Mixins
 @mixin attr-size($attr, $size, $base:16, $unit:rem) {
-    #{$attr}: #{$size}px;
+    #{$attr}: #{strip-units($size)}px;
     #{$attr}: relative-size($size, $base, $unit);
 }
 
@@ -62,6 +64,14 @@ html{
     @include clear-floats;
 }
 
+.ir {
+    border: 0;
+    font: 0/0 Arial;
+    text-shadow: none;
+    color: transparent;
+    background-color: transparent;
+}
+
 .direcaoAerovale{
     background-color: $orange;
     color: $white;
@@ -103,7 +113,34 @@ html{
 
     button{
         @include attr-size('min-width',70);
+        position: relative;
+        top: -7px;
+        cursor:pointer;
+        &:active{
+            top: -6px;
+        }
     }
+}
+
+.theCombo{
+    @include ellipsis;
+    @include box-sizing(border-box);
+    @include border-radius(3px);
+    @include attr-size('font-size',12);
+    @include attr-size('padding',4);
+    @include attr-size('padding-right',40);
+    @include attr-size('width',140);
+    border: thin solid darken($gray, 13.7%);
+    white-space: nowrap;
+    overflow: hidden;
+    background:{
+        image: image_url('sprites/ico/bullet-down.png');
+        repeat: no-repeat;
+        position:95% 50%;
+        color: transparent;
+    };
+    color: inherit;
+    cursor:pointer;
 }
 
 .media{
@@ -129,6 +166,12 @@ html{
     margin-bottom:0;
 }
 
+.alignDados{
+    @include box-sizing(border-box);
+    width:700px;
+    @include attr-size('padding',7);
+}
+
 .resultadoAerovale{
     ul{
         margin: 0;
@@ -140,6 +183,8 @@ html{
             margin-top: 10px;
             border: 1px solid #EEE;
             .handlerLista{
+                min-height: 25px;
+                line-height: 25px;
                 cursor: pointer;
                 background:{
                     image: image_url('sprites/ico/seta-close.png');
@@ -161,6 +206,7 @@ html{
         width: 100%;
         background-color: $gray;
         margin-top: 10px;
+        table-layout: fixed;
         td{
             vertical-align: top;
             // padding: 20px 5px;

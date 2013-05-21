@@ -1,66 +1,86 @@
-/* line 66, sprites/ico/*.png */
-.ico-sprite, .ico-calendar, .ico-clock, .ico-seta-close, .ico-seta-open {
-  background: url('../images/sprites/ico-s6b500280f8.png') no-repeat; }
+/* line 82, sprites/ico/*.png */
+.ico-sprite, .ico-bullet-down, .ico-buscar-rota, .ico-calendar, .ico-clock, .ico-seta-close, .ico-seta-open {
+  background: url('../images/sprites/ico-sbd3e906558.png') no-repeat; }
 
-/* line 60, ../../../../../../../../Users/lagden/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
-.ico-calendar {
+/* line 60, ../../../../../../../../../Users/lagden/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.ico-bullet-down {
   background-position: 0 0;
+  height: 9px;
+  width: 13px; }
+
+/* line 60, ../../../../../../../../../Users/lagden/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.ico-buscar-rota {
+  background-position: -13px 0;
+  height: 41px;
+  width: 130px; }
+
+/* line 60, ../../../../../../../../../Users/lagden/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.ico-calendar {
+  background-position: -143px 0;
   height: 36px;
   width: 32px; }
 
-/* line 60, ../../../../../../../../Users/lagden/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 60, ../../../../../../../../../Users/lagden/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .ico-clock {
-  background-position: -32px 0;
+  background-position: -175px 0;
   height: 35px;
   width: 35px; }
 
-/* line 60, ../../../../../../../../Users/lagden/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 60, ../../../../../../../../../Users/lagden/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .ico-seta-close {
-  background-position: -67px 0;
+  background-position: -210px 0;
   height: 25px;
   width: 15px; }
 
-/* line 60, ../../../../../../../../Users/lagden/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 60, ../../../../../../../../../Users/lagden/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .ico-seta-open {
-  background-position: -82px 0;
+  background-position: -225px 0;
   height: 15px;
   width: 25px; }
 
-/* line 55, ../sass/aerovale.scss */
+/* line 57, ../sass/aerovale.scss */
 html {
   font: 1em/1.5 serif;
   overflow-y: scroll;
   min-height: 100%; }
 
-/* line 27, ../sass/aerovale.scss */
+/* line 29, ../sass/aerovale.scss */
 .cf:before, .media:before, .cf:after, .media:after {
   content: "\0020";
   display: block;
   height: 0;
   overflow: hidden; }
-/* line 34, ../sass/aerovale.scss */
+/* line 36, ../sass/aerovale.scss */
 .cf:after, .media:after {
   clear: both; }
-/* line 38, ../sass/aerovale.scss */
+/* line 40, ../sass/aerovale.scss */
 .cf, .media {
   zoom: 1; }
 
-/* line 65, ../sass/aerovale.scss */
+/* line 67, ../sass/aerovale.scss */
+.ir {
+  border: 0;
+  font: 0/0 Arial;
+  text-shadow: none;
+  color: transparent;
+  background-color: transparent; }
+
+/* line 75, ../sass/aerovale.scss */
 .direcaoAerovale {
   background-color: #ebac12;
   color: white;
   padding: 20px;
   padding: 1.25rem; }
-  /* line 69, ../sass/aerovale.scss */
+  /* line 79, ../sass/aerovale.scss */
   .direcaoAerovale small {
     margin-left: 20px;
     margin-left: 1.25rem; }
 
-/* line 75, ../sass/aerovale.scss */
+/* line 85, ../sass/aerovale.scss */
 .frmFiltroAeronave {
   position: relative;
   z-index: 800; }
-  /* line 79, ../sass/aerovale.scss */
+  /* line 89, ../sass/aerovale.scss */
   .frmFiltroAeronave .frm-actions,
   .frmFiltroAeronave .frm-grupo {
     display: inline-block;
@@ -68,17 +88,17 @@ html {
     *zoom: 1;
     margin-left: 10px;
     vertical-align: baseline; }
-  /* line 85, ../sass/aerovale.scss */
+  /* line 95, ../sass/aerovale.scss */
   .frmFiltroAeronave .frm-controle {
     position: relative; }
-  /* line 89, ../sass/aerovale.scss */
+  /* line 99, ../sass/aerovale.scss */
   .frmFiltroAeronave label {
     color: #ebac12; }
-  /* line 93, ../sass/aerovale.scss */
+  /* line 103, ../sass/aerovale.scss */
   .frmFiltroAeronave select {
     min-width: 170px;
     min-width: 10.625rem; }
-  /* line 98, ../sass/aerovale.scss */
+  /* line 108, ../sass/aerovale.scss */
   .frmFiltroAeronave input[type=text] {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -87,63 +107,114 @@ html {
     max-width: 6.25rem;
     height: 32px;
     height: 2rem; }
-  /* line 104, ../sass/aerovale.scss */
+  /* line 114, ../sass/aerovale.scss */
   .frmFiltroAeronave button {
     min-width: 70px;
-    min-width: 4.375rem; }
+    min-width: 4.375rem;
+    position: relative;
+    top: -7px;
+    cursor: pointer; }
+    /* line 119, ../sass/aerovale.scss */
+    .frmFiltroAeronave button:active {
+      top: -6px; }
 
-/* line 109, ../sass/aerovale.scss */
+/* line 125, ../sass/aerovale.scss */
+.theCombo {
+  white-space: nowrap;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  font-size: 12px;
+  font-size: 0.75rem;
+  padding: 4px;
+  padding: 0.25rem;
+  padding-right: 40px;
+  padding-right: 2.5rem;
+  width: 140px;
+  width: 8.75rem;
+  border: thin solid #d4d4d4;
+  white-space: nowrap;
+  overflow: hidden;
+  background-image: url('../images/sprites/ico/bullet-down.png?1369156007');
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+  background-color: transparent;
+  color: inherit;
+  cursor: pointer; }
+
+/* line 146, ../sass/aerovale.scss */
 .media {
   display: block; }
 
-/* line 114, ../sass/aerovale.scss */
+/* line 151, ../sass/aerovale.scss */
 .media__img {
   float: left;
   margin-right: 10px; }
 
-/* line 119, ../sass/aerovale.scss */
+/* line 156, ../sass/aerovale.scss */
 .media__img img {
   display: block; }
 
-/* line 123, ../sass/aerovale.scss */
+/* line 160, ../sass/aerovale.scss */
 .media__body {
   overflow: hidden; }
 
-/* line 128, ../sass/aerovale.scss */
+/* line 165, ../sass/aerovale.scss */
 .media__body,
 .media__body > :last-child {
   margin-bottom: 0; }
 
-/* line 133, ../sass/aerovale.scss */
+/* line 169, ../sass/aerovale.scss */
+.alignDados {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 700px;
+  padding: 7px;
+  padding: 0.4375rem; }
+
+/* line 176, ../sass/aerovale.scss */
 .resultadoAerovale ul {
   margin: 0;
   padding: 0;
   list-style: none; }
-  /* line 137, ../sass/aerovale.scss */
+  /* line 180, ../sass/aerovale.scss */
   .resultadoAerovale ul li {
     padding: 20px;
     padding: 1.25rem;
     background-color: #f7f7f7;
     margin-top: 10px;
     border: 1px solid #EEE; }
-    /* line 142, ../sass/aerovale.scss */
+    /* line 185, ../sass/aerovale.scss */
     .resultadoAerovale ul li .handlerLista {
+      min-height: 25px;
+      line-height: 25px;
       cursor: pointer;
       background-image: url('../images/sprites/ico/seta-close.png?1368687031');
       background-repeat: no-repeat;
       background-position: 100% 50%; }
-      /* line 149, ../sass/aerovale.scss */
+      /* line 194, ../sass/aerovale.scss */
       .resultadoAerovale ul li .handlerLista.open {
         background-image: url('../images/sprites/ico/seta-open.png?1368687094'); }
-    /* line 155, ../sass/aerovale.scss */
+    /* line 200, ../sass/aerovale.scss */
     .resultadoAerovale ul li .contentLista {
       display: none; }
-/* line 160, ../sass/aerovale.scss */
+/* line 205, ../sass/aerovale.scss */
 .resultadoAerovale table {
   width: 100%;
   background-color: #f7f7f7;
-  margin-top: 10px; }
-  /* line 164, ../sass/aerovale.scss */
+  margin-top: 10px;
+  table-layout: fixed; }
+  /* line 210, ../sass/aerovale.scss */
   .resultadoAerovale table td {
     vertical-align: top;
     padding: 20px;
