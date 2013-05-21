@@ -4,271 +4,505 @@
     "horariopartida": "07:00",
     "horariochegada": "07:50",
     "origem": "BHZ",
-    "destino": "RIO"
+    "destino": "RIO",
+    "aeroporto_origem": "Aeroporto da Pampulha",
+    "endereco_origem": "Praça Bagatelle 204, Belo Horizonte, MG",
+    "observacao_origem": "Check in no saguão do aeroporto, terminal de passageiros, no balcão da Vale",
+    "aeroporto_destino": "Aeroporto Santos Dumont",
+    "endereco_destino": "Praça Senador Salgado Filho, s/nº, Centro, Rio de Janeiro, RJ",
+    "observacao_destino": "não tem"
 }, {
     "aeronave": "Aerovale Norte (EMB-190)",
     "diadasemana": "Segunda-feira",
     "horariopartida": "08:20",
     "horariochegada": "09:10",
     "origem": "RIO",
-    "destino": "BHZ"
+    "destino": "BHZ",
+    "aeroporto_origem": "Aeroporto Santos Dumont",
+    "endereco_origem": "Praça Senador Salgado Filho, s/nº, Centro, Rio de Janeiro, RJ",
+    "observacao_origem": "não tem",
+    "aeroporto_destino": "Aeroporto da Pampulha",
+    "endereco_destino": "Praça Bagatelle 204, Belo Horizonte, MG",
+    "observacao_destino": "Check in no saguão do aeroporto, terminal de passageiros, no balcão da Vale"
 }, {
     "aeronave": "Aerovale Norte (EMB-190)",
     "diadasemana": "Segunda-feira",
     "horariopartida": "09:40",
     "horariochegada": "12:00",
     "origem": "BHZ",
-    "destino": "CKS"
+    "destino": "CKS",
+    "aeroporto_origem": "Aeroporto da Pampulha",
+    "endereco_origem": "Praça Bagatelle 204, Belo Horizonte, MG",
+    "observacao_origem": "Check in no saguão do aeroporto, terminal de passageiros, no balcão da Vale",
+    "aeroporto_destino": "Aeroporto de Carajás",
+    "endereco_destino": "Rodovia Raymundo Mascarenhas S/N, Núcleo Urbano de Carajás - Parauapebas - PA",
+    "observacao_destino": "Check in pela Amazontour, no Terminal de Passageiros"
 }, {
     "aeronave": "Aerovale Norte (EMB-190)",
     "diadasemana": "Segunda-feira",
     "horariopartida": "17:00",
     "horariochegada": "19:20",
     "origem": "CKS",
-    "destino": "BHZ"
+    "destino": "BHZ",
+    "aeroporto_origem": "Aeroporto de Carajás",
+    "endereco_origem": "Rodovia Raymundo Mascarenhas S/N, Núcleo Urbano de Carajás - Parauapebas - PA",
+    "observacao_origem": "Check in pela Amazontour, no Terminal de Passageiros",
+    "aeroporto_destino": "Aeroporto da Pampulha",
+    "endereco_destino": "Praça Bagatelle 204, Belo Horizonte, MG",
+    "observacao_destino": "Check in no saguão do aeroporto, terminal de passageiros, no balcão da Vale"
 }, {
     "aeronave": "Aerovale Norte (EMB-190)",
     "diadasemana": "Terça-feira",
     "horariopartida": "07:00",
     "horariochegada": "09:20",
     "origem": "BHZ",
-    "destino": "CKS"
+    "destino": "CKS",
+    "aeroporto_origem": "Aeroporto da Pampulha",
+    "endereco_origem": "Praça Bagatelle 204, Belo Horizonte, MG",
+    "observacao_origem": "Check in no saguão do aeroporto, terminal de passageiros, no balcão da Vale",
+    "aeroporto_destino": "Aeroporto de Carajás",
+    "endereco_destino": "Rodovia Raymundo Mascarenhas S/N, Núcleo Urbano de Carajás - Parauapebas - PA",
+    "observacao_destino": "Check in pela Amazontour, no Terminal de Passageiros"
 }, {
     "aeronave": "Aerovale Norte (EMB-190)",
     "diadasemana": "Terça-feira",
     "horariopartida": "17:00",
     "horariochegada": "19:20",
     "origem": "CKS",
-    "destino": "BHZ"
+    "destino": "BHZ",
+    "aeroporto_origem": "Aeroporto de Carajás",
+    "endereco_origem": "Rodovia Raymundo Mascarenhas S/N, Núcleo Urbano de Carajás - Parauapebas - PA",
+    "observacao_origem": "Check in pela Amazontour, no Terminal de Passageiros",
+    "aeroporto_destino": "Aeroporto da Pampulha",
+    "endereco_destino": "Praça Bagatelle 204, Belo Horizonte, MG",
+    "observacao_destino": "Check in no saguão do aeroporto, terminal de passageiros, no balcão da Vale"
 }, {
     "aeronave": "Aerovale Norte (EMB-190)",
     "diadasemana": "Sexta-feira",
     "horariopartida": "07:00",
     "horariochegada": "09:20",
     "origem": "BHZ",
-    "destino": "CKS"
+    "destino": "CKS",
+    "aeroporto_origem": "Aeroporto da Pampulha",
+    "endereco_origem": "Praça Bagatelle 204, Belo Horizonte, MG",
+    "observacao_origem": "Check in no saguão do aeroporto, terminal de passageiros, no balcão da Vale",
+    "aeroporto_destino": "Aeroporto de Carajás",
+    "endereco_destino": "Rodovia Raymundo Mascarenhas S/N, Núcleo Urbano de Carajás - Parauapebas - PA",
+    "observacao_destino": "Check in pela Amazontour, no Terminal de Passageiros"
 }, {
     "aeronave": "Aerovale Norte (EMB-190)",
     "diadasemana": "Sexta-feira",
     "horariopartida": "14:20",
     "horariochegada": "16:40",
     "origem": "CKS",
-    "destino": "BHZ"
+    "destino": "BHZ",
+    "aeroporto_origem": "Aeroporto de Carajás",
+    "endereco_origem": "Rodovia Raymundo Mascarenhas S/N, Núcleo Urbano de Carajás - Parauapebas - PA",
+    "observacao_origem": "Check in pela Amazontour, no Terminal de Passageiros",
+    "aeroporto_destino": "Aeroporto da Pampulha",
+    "endereco_destino": "Praça Bagatelle 204, Belo Horizonte, MG",
+    "observacao_destino": "Check in no saguão do aeroporto, terminal de passageiros, no balcão da Vale"
 }, {
     "aeronave": "Aerovale Norte (EMB-190)",
     "diadasemana": "Sexta-feira",
     "horariopartida": "17:10",
     "horariochegada": "18:00",
     "origem": "BHZ",
-    "destino": "RIO"
+    "destino": "RIO",
+    "aeroporto_origem": "Aeroporto da Pampulha",
+    "endereco_origem": "Praça Bagatelle 204, Belo Horizonte, MG",
+    "observacao_origem": "Check in no saguão do aeroporto, terminal de passageiros, no balcão da Vale",
+    "aeroporto_destino": "Aeroporto Santos Dumont",
+    "endereco_destino": "Praça Senador Salgado Filho, s/nº, Centro, Rio de Janeiro, RJ",
+    "observacao_destino": "não tem"
 }, {
     "aeronave": "Aerovale Norte (EMB-190)",
     "diadasemana": "Sexta-feira",
     "horariopartida": "18:30",
     "horariochegada": "19:20",
     "origem": "RIO",
-    "destino": "BHZ"
+    "destino": "BHZ",
+    "aeroporto_origem": "Aeroporto Santos Dumont",
+    "endereco_origem": "Praça Senador Salgado Filho, s/nº, Centro, Rio de Janeiro, RJ",
+    "observacao_origem": "não tem",
+    "aeroporto_destino": "Aeroporto da Pampulha",
+    "endereco_destino": "Praça Bagatelle 204, Belo Horizonte, MG",
+    "observacao_destino": "Check in no saguão do aeroporto, terminal de passageiros, no balcão da Vale"
 }, {
     "aeronave": "Aerovale Sul (ERJ135LR)",
     "diadasemana": "Terça-feira",
     "horariopartida": "07:30",
     "horariochegada": "08:30",
     "origem": "BHZ",
-    "destino": "RIO"
+    "destino": "RIO",
+    "aeroporto_origem": "Aeroporto da Pampulha",
+    "endereco_origem": "Praça Bagatelle 204, Belo Horizonte, MG",
+    "observacao_origem": "Check in no saguão do aeroporto, terminal de passageiros, no balcão da Vale",
+    "aeroporto_destino": "Aeroporto Santos Dumont",
+    "endereco_destino": "Praça Senador Salgado Filho, s/nº, Centro, Rio de Janeiro, RJ",
+    "observacao_destino": "não tem"
 }, {
     "aeronave": "Aerovale Sul (ERJ135LR)",
     "diadasemana": "Terça-feira",
     "horariopartida": "08:50",
     "horariochegada": "09:50",
     "origem": "RIO",
-    "destino": "BHZ"
+    "destino": "BHZ",
+    "aeroporto_origem": "Aeroporto Santos Dumont",
+    "endereco_origem": "Praça Senador Salgado Filho, s/nº, Centro, Rio de Janeiro, RJ",
+    "observacao_origem": "não tem",
+    "aeroporto_destino": "Aeroporto da Pampulha",
+    "endereco_destino": "Praça Bagatelle 204, Belo Horizonte, MG",
+    "observacao_destino": "Check in no saguão do aeroporto, terminal de passageiros, no balcão da Vale"
 }, {
     "aeronave": "Aerovale Sul (ERJ135LR)",
     "diadasemana": "Terça-feira",
     "horariopartida": "17:10",
     "horariochegada": "18:10",
     "origem": "BHZ",
-    "destino": "RIO"
+    "destino": "RIO",
+    "aeroporto_origem": "Aeroporto da Pampulha",
+    "endereco_origem": "Praça Bagatelle 204, Belo Horizonte, MG",
+    "observacao_origem": "Check in no saguão do aeroporto, terminal de passageiros, no balcão da Vale",
+    "aeroporto_destino": "Aeroporto Santos Dumont",
+    "endereco_destino": "Praça Senador Salgado Filho, s/nº, Centro, Rio de Janeiro, RJ",
+    "observacao_destino": "não tem"
 }, {
     "aeronave": "Aerovale Sul (ERJ135LR)",
     "diadasemana": "Terça-feira",
     "horariopartida": "18:30",
     "horariochegada": "19:30",
     "origem": "RIO",
-    "destino": "BHZ"
+    "destino": "BHZ",
+    "aeroporto_origem": "Aeroporto Santos Dumont",
+    "endereco_origem": "Praça Senador Salgado Filho, s/nº, Centro, Rio de Janeiro, RJ",
+    "observacao_origem": "não tem",
+    "aeroporto_destino": "Aeroporto da Pampulha",
+    "endereco_destino": "Praça Bagatelle 204, Belo Horizonte, MG",
+    "observacao_destino": "Check in no saguão do aeroporto, terminal de passageiros, no balcão da Vale"
 }, {
     "aeronave": "Aerovale Sul (ERJ135LR)",
     "diadasemana": "Quinta-feira",
     "horariopartida": "07:30",
     "horariochegada": "08:30",
     "origem": "BHZ",
-    "destino": "RIO"
+    "destino": "RIO",
+    "aeroporto_origem": "Aeroporto da Pampulha",
+    "endereco_origem": "Praça Bagatelle 204, Belo Horizonte, MG",
+    "observacao_origem": "Check in no saguão do aeroporto, terminal de passageiros, no balcão da Vale",
+    "aeroporto_destino": "Aeroporto Santos Dumont",
+    "endereco_destino": "Praça Senador Salgado Filho, s/nº, Centro, Rio de Janeiro, RJ",
+    "observacao_destino": "não tem"
 }, {
     "aeronave": "Aerovale Sul (ERJ135LR)",
     "diadasemana": "Quinta-feira",
     "horariopartida": "08:50",
     "horariochegada": "09:50",
     "origem": "RIO",
-    "destino": "BHZ"
+    "destino": "BHZ",
+    "aeroporto_origem": "Aeroporto Santos Dumont",
+    "endereco_origem": "Praça Senador Salgado Filho, s/nº, Centro, Rio de Janeiro, RJ",
+    "observacao_origem": "não tem",
+    "aeroporto_destino": "Aeroporto da Pampulha",
+    "endereco_destino": "Praça Bagatelle 204, Belo Horizonte, MG",
+    "observacao_destino": "Check in no saguão do aeroporto, terminal de passageiros, no balcão da Vale"
 }, {
     "aeronave": "Aerovale Sul (ERJ135LR)",
     "diadasemana": "Quinta-feira",
     "horariopartida": "17:10",
     "horariochegada": "18:10",
     "origem": "BHZ",
-    "destino": "RIO"
+    "destino": "RIO",
+    "aeroporto_origem": "Aeroporto da Pampulha",
+    "endereco_origem": "Praça Bagatelle 204, Belo Horizonte, MG",
+    "observacao_origem": "Check in no saguão do aeroporto, terminal de passageiros, no balcão da Vale",
+    "aeroporto_destino": "Aeroporto Santos Dumont",
+    "endereco_destino": "Praça Senador Salgado Filho, s/nº, Centro, Rio de Janeiro, RJ",
+    "observacao_destino": "não tem"
 }, {
     "aeronave": "Aerovale Sul (ERJ135LR)",
     "diadasemana": "Quinta-feira",
     "horariopartida": "18:30",
     "horariochegada": "19:30",
     "origem": "RIO",
-    "destino": "BHZ"
+    "destino": "BHZ",
+    "aeroporto_origem": "Aeroporto Santos Dumont",
+    "endereco_origem": "Praça Senador Salgado Filho, s/nº, Centro, Rio de Janeiro, RJ",
+    "observacao_origem": "não tem",
+    "aeroporto_destino": "Aeroporto da Pampulha",
+    "endereco_destino": "Praça Bagatelle 204, Belo Horizonte, MG",
+    "observacao_destino": "Check in no saguão do aeroporto, terminal de passageiros, no balcão da Vale"
 }, {
     "aeronave": "Aerovale Caravan",
     "diadasemana": "Segunda-feira",
     "horariopartida": "12:30",
     "horariochegada": "13:10",
     "origem": "CKS",
-    "destino": "OIA"
+    "destino": "OIA",
+    "aeroporto_origem": "Aeroporto de Carajás",
+    "endereco_origem": "Rodovia Raymundo Mascarenhas S/N, Núcleo Urbano de Carajás - Parauapebas - PA",
+    "observacao_origem": "Check in pela Amazontour, no Terminal de Passageiros",
+    "aeroporto_destino": "Aeroporto Ourilândia do Norte",
+    "endereco_destino": "Rodovia Estadual PA-279, Km 152, Ourilândia do Norte- PA",
+    "observacao_destino": "Check in pela Amazontour, no hangar"
 }, {
     "aeronave": "Aerovale Caravan",
     "diadasemana": "Segunda-feira",
     "horariopartida": "13:20",
     "horariochegada": "14:20",
     "origem": "OIA",
-    "destino": "MAB"
+    "destino": "MAB",
+    "aeroporto_origem": "Aeroporto Ourilândia do Norte",
+    "endereco_origem": "Rodovia Estadual PA-279, Km 152, Ourilândia do Norte- PA",
+    "observacao_origem": "Check in pela Amazontour, no hangar",
+    "aeroporto_destino": "Aeroporto João Correia da Rocha",
+    "endereco_destino": "Rodovia Transamazonica, Km 3,5, Marabá – PA",
+    "observacao_destino": "Check in pela Amazontour, no hangar"
 }, {
     "aeronave": "Aerovale Caravan",
     "diadasemana": "Segunda-feira",
     "horariopartida": "14:30",
     "horariochegada": "15:30",
     "origem": "MAB",
-    "destino": "OIA"
+    "destino": "OIA",
+    "aeroporto_origem": "Aeroporto João Correia da Rocha",
+    "endereco_origem": "Rodovia Transamazonica, Km 3,5, Marabá – PA",
+    "observacao_origem": "Check in pela Amazontour, no hangar",
+    "aeroporto_destino": "Aeroporto Ourilândia do Norte",
+    "endereco_destino": "Rodovia Estadual PA-279, Km 152, Ourilândia do Norte- PA",
+    "observacao_destino": "Check in pela Amazontour, no hangar"
 }, {
     "aeronave": "Aerovale Caravan",
     "diadasemana": "Segunda-feira",
     "horariopartida": "15:40",
     "horariochegada": "16:20",
     "origem": "OIA",
-    "destino": "CKS"
+    "destino": "CKS",
+    "aeroporto_origem": "Aeroporto Ourilândia do Norte",
+    "endereco_origem": "Rodovia Estadual PA-279, Km 152, Ourilândia do Norte- PA",
+    "observacao_origem": "Check in pela Amazontour, no hangar",
+    "aeroporto_destino": "Aeroporto de Carajás",
+    "endereco_destino": "Rodovia Raymundo Mascarenhas S/N, Núcleo Urbano de Carajás - Parauapebas - PA",
+    "observacao_destino": "Check in pela Amazontour, no Terminal de Passageiros"
 }, {
     "aeronave": "Aerovale Caravan",
     "diadasemana": "Terça-feira",
     "horariopartida": "09:50",
     "horariochegada": "10:30",
     "origem": "CKS",
-    "destino": "OIA"
+    "destino": "OIA",
+    "aeroporto_origem": "Aeroporto de Carajás",
+    "endereco_origem": "Rodovia Raymundo Mascarenhas S/N, Núcleo Urbano de Carajás - Parauapebas - PA",
+    "observacao_origem": "Check in pela Amazontour, no Terminal de Passageiros",
+    "aeroporto_destino": "Aeroporto Ourilândia do Norte",
+    "endereco_destino": "Rodovia Estadual PA-279, Km 152, Ourilândia do Norte- PA",
+    "observacao_destino": "Check in pela Amazontour, no hangar"
 }, {
     "aeronave": "Aerovale Caravan",
     "diadasemana": "Terça-feira",
     "horariopartida": "10:40",
     "horariochegada": "11:20",
     "origem": "OIA",
-    "destino": "CKS"
+    "destino": "CKS",
+    "aeroporto_origem": "Aeroporto Ourilândia do Norte",
+    "endereco_origem": "Rodovia Estadual PA-279, Km 152, Ourilândia do Norte- PA",
+    "observacao_origem": "Check in pela Amazontour, no hangar",
+    "aeroporto_destino": "Aeroporto de Carajás",
+    "endereco_destino": "Rodovia Raymundo Mascarenhas S/N, Núcleo Urbano de Carajás - Parauapebas - PA",
+    "observacao_destino": "Check in pela Amazontour, no Terminal de Passageiros"
 }, {
     "aeronave": "Aerovale Caravan",
     "diadasemana": "Quinta-feira",
     "horariopartida": "09:50",
     "horariochegada": "10:30",
     "origem": "CKS",
-    "destino": "OIA"
+    "destino": "OIA",
+    "aeroporto_origem": "Aeroporto de Carajás",
+    "endereco_origem": "Rodovia Raymundo Mascarenhas S/N, Núcleo Urbano de Carajás - Parauapebas - PA",
+    "observacao_origem": "Check in pela Amazontour, no Terminal de Passageiros",
+    "aeroporto_destino": "Aeroporto Ourilândia do Norte",
+    "endereco_destino": "Rodovia Estadual PA-279, Km 152, Ourilândia do Norte- PA",
+    "observacao_destino": "Check in pela Amazontour, no hangar"
 }, {
     "aeronave": "Aerovale Caravan",
     "diadasemana": "Quinta-feira",
     "horariopartida": "10:40",
     "horariochegada": "11:20",
     "origem": "OIA",
-    "destino": "CKS"
+    "destino": "CKS",
+    "aeroporto_origem": "Aeroporto Ourilândia do Norte",
+    "endereco_origem": "Rodovia Estadual PA-279, Km 152, Ourilândia do Norte- PA",
+    "observacao_origem": "Check in pela Amazontour, no hangar",
+    "aeroporto_destino": "Aeroporto de Carajás",
+    "endereco_destino": "Rodovia Raymundo Mascarenhas S/N, Núcleo Urbano de Carajás - Parauapebas - PA",
+    "observacao_destino": "Check in pela Amazontour, no Terminal de Passageiros"
 }, {
     "aeronave": "Aerovale Caravan",
     "diadasemana": "Sexta-feira",
     "horariopartida": "08:30",
     "horariochegada": "09:10",
     "origem": "CKS",
-    "destino": "OIA"
+    "destino": "OIA",
+    "aeroporto_origem": "Aeroporto de Carajás",
+    "endereco_origem": "Rodovia Raymundo Mascarenhas S/N, Núcleo Urbano de Carajás - Parauapebas - PA",
+    "observacao_origem": "Check in pela Amazontour, no Terminal de Passageiros",
+    "aeroporto_destino": "Aeroporto Ourilândia do Norte",
+    "endereco_destino": "Rodovia Estadual PA-279, Km 152, Ourilândia do Norte- PA",
+    "observacao_destino": "Check in pela Amazontour, no hangar"
 }, {
     "aeronave": "Aerovale Caravan",
     "diadasemana": "Sexta-feira",
     "horariopartida": "09:20",
     "horariochegada": "10:00",
     "origem": "OIA",
-    "destino": "CKS"
+    "destino": "CKS",
+    "aeroporto_origem": "Aeroporto Ourilândia do Norte",
+    "endereco_origem": "Rodovia Estadual PA-279, Km 152, Ourilândia do Norte- PA",
+    "observacao_origem": "Check in pela Amazontour, no hangar",
+    "aeroporto_destino": "Aeroporto de Carajás",
+    "endereco_destino": "Rodovia Raymundo Mascarenhas S/N, Núcleo Urbano de Carajás - Parauapebas - PA",
+    "observacao_destino": "Check in pela Amazontour, no Terminal de Passageiros"
 }, {
     "aeronave": "Aerovale Caravan",
     "diadasemana": "Sexta-feira",
     "horariopartida": "10:10",
     "horariochegada": "10:50",
     "origem": "CKS",
-    "destino": "OIA"
+    "destino": "OIA",
+    "aeroporto_origem": "Aeroporto de Carajás",
+    "endereco_origem": "Rodovia Raymundo Mascarenhas S/N, Núcleo Urbano de Carajás - Parauapebas - PA",
+    "observacao_origem": "Check in pela Amazontour, no Terminal de Passageiros",
+    "aeroporto_destino": "Aeroporto Ourilândia do Norte",
+    "endereco_destino": "Rodovia Estadual PA-279, Km 152, Ourilândia do Norte- PA",
+    "observacao_destino": "Check in pela Amazontour, no hangar"
 }, {
     "aeronave": "Aerovale Caravan",
     "diadasemana": "Sexta-feira",
     "horariopartida": "11:00",
     "horariochegada": "12:00",
     "origem": "OIA",
-    "destino": "MAB"
+    "destino": "MAB",
+    "aeroporto_origem": "Aeroporto Ourilândia do Norte",
+    "endereco_origem": "Rodovia Estadual PA-279, Km 152, Ourilândia do Norte- PA",
+    "observacao_origem": "Check in pela Amazontour, no hangar",
+    "aeroporto_destino": "Aeroporto João Correia da Rocha",
+    "endereco_destino": "Rodovia Transamazonica, Km 3,5, Marabá – PA",
+    "observacao_destino": "Check in pela Amazontour, no hangar"
 }, {
     "aeronave": "Aerovale Caravan",
     "diadasemana": "Sexta-feira",
     "horariopartida": "12:10",
     "horariochegada": "12:40",
     "origem": "MAB",
-    "destino": "CKS"
+    "destino": "CKS",
+    "aeroporto_origem": "Aeroporto João Correia da Rocha",
+    "endereco_origem": "Rodovia Transamazonica, Km 3,5, Marabá – PA",
+    "observacao_origem": "Check in pela Amazontour, no hangar",
+    "aeroporto_destino": "Aeroporto de Carajás",
+    "endereco_destino": "Rodovia Raymundo Mascarenhas S/N, Núcleo Urbano de Carajás - Parauapebas - PA",
+    "observacao_destino": "Check in pela Amazontour, no Terminal de Passageiros"
 }, {
     "aeronave": "Aerovale Norte (EMB-190)",
     "diadasemana": "Sábado",
     "horariopartida": "07:00",
     "horariochegada": "09:20",
     "origem": "BHZ",
-    "destino": "CKS"
+    "destino": "CKS",
+    "aeroporto_origem": "Aeroporto da Pampulha",
+    "endereco_origem": "Praça Bagatelle 204, Belo Horizonte, MG",
+    "observacao_origem": "Check in no saguão do aeroporto, terminal de passageiros, no balcão da Vale",
+    "aeroporto_destino": "Aeroporto de Carajás",
+    "endereco_destino": "Rodovia Raymundo Mascarenhas S/N, Núcleo Urbano de Carajás - Parauapebas - PA",
+    "observacao_destino": "Check in pela Amazontour, no Terminal de Passageiros"
 }, {
     "aeronave": "Aerovale Norte (EMB-190)",
     "diadasemana": "Sábado",
     "horariopartida": "09:50",
     "horariochegada": "12:10",
     "origem": "CKS",
-    "destino": "BHZ"
+    "destino": "BHZ",
+    "aeroporto_origem": "Aeroporto de Carajás",
+    "endereco_origem": "Rodovia Raymundo Mascarenhas S/N, Núcleo Urbano de Carajás - Parauapebas - PA",
+    "observacao_origem": "Check in pela Amazontour, no Terminal de Passageiros",
+    "aeroporto_destino": "Aeroporto da Pampulha",
+    "endereco_destino": "Praça Bagatelle 204, Belo Horizonte, MG",
+    "observacao_destino": "Check in no saguão do aeroporto, terminal de passageiros, no balcão da Vale"
 }, {
     "aeronave": "Aerovale Norte (EMB-190)",
     "diadasemana": "Domingo",
     "horariopartida": "16:00",
     "horariochegada": "18:20",
     "origem": "BHZ",
-    "destino": "CKS"
+    "destino": "CKS",
+    "aeroporto_origem": "Aeroporto da Pampulha",
+    "endereco_origem": "Praça Bagatelle 204, Belo Horizonte, MG",
+    "observacao_origem": "Check in no saguão do aeroporto, terminal de passageiros, no balcão da Vale",
+    "aeroporto_destino": "Aeroporto de Carajás",
+    "endereco_destino": "Rodovia Raymundo Mascarenhas S/N, Núcleo Urbano de Carajás - Parauapebas - PA",
+    "observacao_destino": "Check in pela Amazontour, no Terminal de Passageiros"
 }, {
     "aeronave": "Aerovale Norte (EMB-190)",
     "diadasemana": "Domingo",
     "horariopartida": "18:50",
     "horariochegada": "21:10",
     "origem": "CKS",
-    "destino": "BHZ"
+    "destino": "BHZ",
+    "aeroporto_origem": "Aeroporto de Carajás",
+    "endereco_origem": "Rodovia Raymundo Mascarenhas S/N, Núcleo Urbano de Carajás - Parauapebas - PA",
+    "observacao_origem": "Check in pela Amazontour, no Terminal de Passageiros",
+    "aeroporto_destino": "Aeroporto da Pampulha",
+    "endereco_destino": "Praça Bagatelle 204, Belo Horizonte, MG",
+    "observacao_destino": "Check in no saguão do aeroporto, terminal de passageiros, no balcão da Vale"
 }, {
     "aeronave": "Aerovale Caravan",
     "diadasemana": "Sábado",
     "horariopartida": "07:30",
     "horariochegada": "08:10",
     "origem": "CKS",
-    "destino": "OIA"
+    "destino": "OIA",
+    "aeroporto_origem": "Aeroporto de Carajás",
+    "endereco_origem": "Rodovia Raymundo Mascarenhas S/N, Núcleo Urbano de Carajás - Parauapebas - PA",
+    "observacao_origem": "Check in pela Amazontour, no Terminal de Passageiros",
+    "aeroporto_destino": "Aeroporto Ourilândia do Norte",
+    "endereco_destino": "Rodovia Estadual PA-279, Km 152, Ourilândia do Norte- PA",
+    "observacao_destino": "Check in pela Amazontour, no hangar"
 }, {
     "aeronave": "Aerovale Caravan",
     "diadasemana": "Sábado",
     "horariopartida": "08:20",
     "horariochegada": "09:00",
     "origem": "OIA",
-    "destino": "CKS"
+    "destino": "CKS",
+    "aeroporto_origem": "Aeroporto Ourilândia do Norte",
+    "endereco_origem": "Rodovia Estadual PA-279, Km 152, Ourilândia do Norte- PA",
+    "observacao_origem": "Check in pela Amazontour, no hangar",
+    "aeroporto_destino": "Aeroporto de Carajás",
+    "endereco_destino": "Rodovia Raymundo Mascarenhas S/N, Núcleo Urbano de Carajás - Parauapebas - PA",
+    "observacao_destino": "Check in pela Amazontour, no Terminal de Passageiros"
 }, {
     "aeronave": "Aerovale Caravan",
     "diadasemana": "Domingo",
     "horariopartida": "18:40",
     "horariochegada": "19:20",
     "origem": "CKS",
-    "destino": "OIA"
+    "destino": "OIA",
+    "aeroporto_origem": "Aeroporto de Carajás",
+    "endereco_origem": "Rodovia Raymundo Mascarenhas S/N, Núcleo Urbano de Carajás - Parauapebas - PA",
+    "observacao_origem": "Check in pela Amazontour, no Terminal de Passageiros",
+    "aeroporto_destino": "Aeroporto Ourilândia do Norte",
+    "endereco_destino": "Rodovia Estadual PA-279, Km 152, Ourilândia do Norte- PA",
+    "observacao_destino": "Check in pela Amazontour, no hangar"
 }, {
     "aeronave": "Aerovale Caravan",
     "diadasemana": "Domingo",
     "horariopartida": "19:30",
     "horariochegada": "20:10",
     "origem": "OIA",
-    "destino": "CKS"
+    "destino": "CKS",
+    "aeroporto_origem": "Aeroporto Ourilândia do Norte",
+    "endereco_origem": "Rodovia Estadual PA-279, Km 152, Ourilândia do Norte- PA",
+    "observacao_origem": "Check in pela Amazontour, no hangar",
+    "aeroporto_destino": "Aeroporto de Carajás",
+    "endereco_destino": "Rodovia Raymundo Mascarenhas S/N, Núcleo Urbano de Carajás - Parauapebas - PA",
+    "observacao_destino": "Check in pela Amazontour, no Terminal de Passageiros"
 }]

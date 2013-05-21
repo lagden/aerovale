@@ -67,8 +67,8 @@ package
 			this._app['objs']['origem'] = null;
 			this._app['objs']['destino'] = null;
 			
-//			var dados:String = (LocationUtil.isWeb(this.stage)) ? "dados.js" : "data/dados.js";
-			var dados:String = "data/dadosJuninho.js";
+			// Json - Dados
+			var dados:String = (LocationUtil.isWeb(this.stage)) ? "../Documents/data/dadosJuninho.js" : "data/dadosJuninho.js";
 			
 			this._dataLoad = new DataLoad(dados);			
 			this._dataLoad.addEventListener(IOErrorEvent.IO_ERROR, this._onError);
@@ -86,7 +86,7 @@ package
 			AlignUtil.alignMiddleCenter(this._mapa, new Rectangle(0, 0, this._app['objs']['w'], this._app['objs']['h']));
 			this.addChild(this._mapa);
 			
-			// Ajuda para fazer o mapeamento (Dev)
+			// Helper para fazer o mapeamento (Dev)
 			// this.addEventListener(MouseEvent.MOUSE_MOVE,coords);
 		}
 		
@@ -111,6 +111,7 @@ package
 		{			
 			this._dados = JSON.parse(this._dataLoad.dataAsString);
 			
+			// Parse e adiciona pontos no no mapa
 			this._app['objs']['pontos'] = {};
 			if(ObjectUtil.contains(this._dados,this._dados.cidades) && ObjectUtil.contains(this._dados,this._dados.voos))
 			{

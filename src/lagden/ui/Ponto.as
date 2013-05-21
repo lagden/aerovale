@@ -6,14 +6,16 @@
 	import com.greensock.TimelineMax;
 	import com.greensock.TweenAlign;
 	import com.greensock.TweenMax;
+	import com.hybrid.ui.ToolTip;
 	
 	import flash.display.Graphics;
 	import flash.display.MovieClip;
 	import flash.display.Stage;
 	import flash.events.Event;
 	import flash.events.MouseEvent;
-	import flash.filters.GlowFilter;
 	import flash.external.ExternalInterface;
+	import flash.filters.GlowFilter;
+	import flash.text.TextFormat;
 	
 	import lagden.utils.TxtBox;
 	
@@ -34,6 +36,7 @@
 		private var _pino:Pino;
 		private var _content:CasaSprite;
 		private var _handler:CasaSprite;
+		private var _tooltip:ToolTip;
 		
 		public var code:String = null;
 		public var isOrigem:Boolean = false;
@@ -67,13 +70,29 @@
 			
 			this._content = new CasaSprite();
 			
+			this._tooltip = new ToolTip();
+			
+			var tf:TextFormat = new TextFormat();
+			tf.bold = true;
+			tf.size = 12;
+			tf.color = 0xFFFFFF;
+			
+			this._tooltip.hook = true;
+			this._tooltip.cornerRadius = 0;
+			this._tooltip.autoSize = true;
+			this._tooltip.colors = [0x000000, 0x000000];
+			this._tooltip.bgAlpha = .7;
+			this._tooltip.align = "center";
+			this._tooltip.titleFormat = tf;
+			
 			this._handler = new CasaSprite();
 			this._handler.buttonMode = true;
 			with(this._handler.graphics){
 				beginFill(0x000000, 0);
-				drawRect(-this._pontoAmarelo.width/2, -this._pontoAmarelo.height/2, this._pontoAmarelo.width, this._pontoAmarelo.height);
+				drawRect(-this._pino.width/2, -this._pino.height/2, this._pino.width, this._pino.height);
 				endFill();
 			}
+			this._handler.addEventListener(MouseEvent.MOUSE_OVER, this.showTooltip);
 			
 			this.addChild(this._content);
 			this.addChild(this._pontoAmarelo);
@@ -87,9 +106,15 @@
 			this.addEventListener(Event.ADDED_TO_STAGE,begin);
 		}
 		
+		private function showTooltip(e:MouseEvent):void
+		{
+			this._tooltip.show(this._handler, this._app['objs']['cidades'][this.code]['nome'] );
+		}
+		
 		// Prepara o ponto e seus destinos
 		private function begin(e:Event):void
 		{
+			
 			for(var d:String in this._app['objs']['flights'][this.code])
 			{
 				var n:String = String(this._app['objs']['flights'][this.code][d]);

@@ -22,6 +22,32 @@ $line-height-ratio: $base-line-height / $base-font-size;
     #{$attr}: relative-size($size, $base, $unit);
 }
 
+@mixin clear-floats(){
+    &:before,
+    &:after {
+        content: "\0020";
+        display: block;
+        height: 0;
+        overflow: hidden;
+    }
+
+    &:after {
+        clear: both;
+    }
+
+    & {
+        zoom: 1;
+    }
+}
+
+@mixin inline-block(){
+    display:inline-block;
+
+    // IE7 fix
+    *display:inline;
+    *zoom:1;
+}
+
 $ico-layout: horizontal;
 @import "sprites/ico/*.png";
 @include all-ico-sprites(true);
@@ -32,14 +58,17 @@ html{
     min-height:100%;
 }
 
-.mlg{
-    margin-left: 10px;
+.cf{
+    @include clear-floats;
 }
 
 .direcaoAerovale{
     background-color: $orange;
     color: $white;
     @include attr-size('padding',20);
+    small{
+        @include attr-size('margin-left',20);
+    }
 }
 
 // Filtro
@@ -48,8 +77,8 @@ html{
     z-index: 800;
     .frm-actions,
     .frm-grupo{
-        @extend .mlg;
         @include inline-block;
+        margin-left: 10px;
         vertical-align: baseline;
     }
 
@@ -78,8 +107,8 @@ html{
 }
 
 .media{
-    display:block;
     @extend .cf;
+    display:block;
 }
 
 .media__img{
@@ -100,26 +129,42 @@ html{
     margin-bottom:0;
 }
 
-.split{
-    text-align:right;
-    list-style:none;
-    margin-left:0;
-}
-
-.split__title{
-    text-align:left;
-    float:left;
-    clear:left;
-}
-
 .resultadoAerovale{
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style:none;
+        li{
+            @include attr-size('padding',20);
+            background-color: $gray;
+            margin-top: 10px;
+            border: 1px solid #EEE;
+            .handlerLista{
+                cursor: pointer;
+                background:{
+                    image: image_url('sprites/ico/seta-close.png');
+                    repeat: no-repeat;
+                    position: 100% 50%;
+                }
+                &.open{
+                    background:{
+                        image: image_url('sprites/ico/seta-open.png');
+                    }
+                }
+            }
+            .contentLista{
+                display: none;
+            }
+        }
+    }
     table{
         width: 100%;
         background-color: $gray;
         margin-top: 10px;
         td{
             vertical-align: top;
-            padding: 20px 5px;
+            // padding: 20px 5px;
+            @include attr-size('padding',20);
         }
     }
 }

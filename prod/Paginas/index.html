@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Aerovale</title>
+        <link rel="stylesheet" type="text/css" href="../Documents/css/aerovale.css" />
+    </head>
+    <body>
+        <h1>Aerovale</h1>
+        <p>Após a confirmação do voo, o passageiro deverá se apresentar com 30 minutos de antecedência no local de embarque, com documento oficial de identificação, com foto. Os passageiros que não apresentarem a identificação exigida não poderão embarcar, conforme o Procedimento de Utilização do Aerovale, disponível para consulta no Portal Vale, e as normas da Infraero e ANAC.</p>
+        <p>O embarque será feito, impreterivelmente, 10 minutos antes da decolagem. Não será permitido viajar de bermuda, camiseta e/ou chinelos. Por exigência da Infraero, é terminantemente proibido falar ao celular no momento do embarque/desembarque (pista do aeroporto).</p>
+        <form method="post" class="frm frmFiltroAeronave" id="frmFiltroAeronave" action="#">
+            <div class="frm-grupo cf">
+                <label for="origem">Origem</label>
+                <div class="frm-controle">
+                    <select title="Origem" class="required fakeCombo" name="origem" id="origem">
+                        <option value="">Selecione</option>
+                        <option value="BHZ">Belo Horizonte</option>
+                    </select>
+                </div>
+            </div>
+            <div class="frm-grupo cf">
+                <label for="destino">Destino</label>
+                <div class="frm-controle">
+                    <select title="Destino" class="required fakeCombo" name="destino" id="destino">
+                        <option value="">Todos</option>
+                        <option value="CKS">Carajás</option>
+                    </select>
+                </div>
+            </div>
+            <div class="frm-actions">
+                <button type="submit" class="btn">Buscar</button>
+            </div>
+        </form>
+        <div id="flashContentAerovale">
+            <p>To view this page ensure that Adobe Flash Player version 11.1.0 or greater is installed.</p>
+        </div>
+        <h3 id="direcaoAerovale" class="direcaoAerovale">Selecione um ponto no mapa ou utilize o filtro</h3>
+        <div id="resultadoAerovale" class="resultadoAerovale">
+
+        </div>
+        <script>window.jQuery || document.write('<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"><\/script>')</script>
+        <script src="../Documents/swfobject.js" type="text/javascript"></script>
+        <script src="../Documents/main.js" type="text/javascript"></script>
+    </body>
+</html>
