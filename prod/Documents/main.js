@@ -51,6 +51,7 @@ $origem.on('change', {
     $.each(cidades[this.value].destinos, function(k, v) {
         ev.data.destino.append('<option value="' + v + '">' + cidades[v].nome + '</option>');
     });
+    ev.data.destino.trigger('change');
 });
 
 window.onload = (function() {

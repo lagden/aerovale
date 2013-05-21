@@ -21,7 +21,8 @@
 
     Plugin.prototype = {
         init: function () {
-            if (this.$element.is('select'))
+            if (this.$element.is('select') && this.$element.data('pluginName') == undefined)
+                this.$element.data('pluginName', pluginName);
                 this.stylezando();
         }
         , stylezando: function() {

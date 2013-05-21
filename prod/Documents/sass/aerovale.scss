@@ -72,6 +72,13 @@ html{
     background-color: transparent;
 }
 
+.alignDados{
+    @include box-sizing(border-box);
+    width:700px;
+    @include attr-size('padding-left',7);
+    @include attr-size('padding-right',7);
+}
+
 .direcaoAerovale{
     background-color: $orange;
     color: $white;
@@ -85,11 +92,14 @@ html{
 .frmFiltroAeronave{
     position: relative;
     z-index: 800;
+    @extend .cf;
     .frm-actions,
     .frm-grupo{
-        @include inline-block;
-        margin-left: 10px;
+        position: relative;
         vertical-align: baseline;
+        margin-right: 40px;
+        float: left;
+        min-height: 60px;
     }
 
     .frm-controle{
@@ -98,10 +108,11 @@ html{
 
     label{
         color: $orange;
+        font: 500 15px 'CaeciliaLTStd-Bold'
     }
 
     select{
-        @include attr-size('min-width',170);
+        // Definido no .theCombo
     }
 
     input[type=text]
@@ -113,11 +124,11 @@ html{
 
     button{
         @include attr-size('min-width',70);
-        position: relative;
-        top: -7px;
+        position: absolute;
+        bottom: 5px;
         cursor:pointer;
         &:active{
-            top: -6px;
+            bottom: 4px;
         }
     }
 }
@@ -129,7 +140,7 @@ html{
     @include attr-size('font-size',12);
     @include attr-size('padding',4);
     @include attr-size('padding-right',40);
-    @include attr-size('width',140);
+    @include attr-size('width',170);
     border: thin solid darken($gray, 13.7%);
     white-space: nowrap;
     overflow: hidden;
@@ -164,12 +175,6 @@ html{
 .media__body,
 .media__body > :last-child{
     margin-bottom:0;
-}
-
-.alignDados{
-    @include box-sizing(border-box);
-    width:700px;
-    @include attr-size('padding',7);
 }
 
 .resultadoAerovale{
