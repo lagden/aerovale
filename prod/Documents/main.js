@@ -156,8 +156,8 @@ function templateFlights(o) {
                 </div>\
             </td>\
             <td>\
-                <b>' + o.aeroporto_destino + '</b><br>\
-                ' + o.endereco_destino + '\
+                <b>' + o.aeroporto_origem + '</b><br>\
+                ' + o.endereco_origem + '\
             </td>\
         </tr>\
     </table>';
