@@ -66,6 +66,13 @@ html {
   background-color: transparent; }
 
 /* line 75, ../sass/aerovale.scss */
+.limparRota {
+  top: 25px;
+  right: 46px;
+  position: absolute;
+  z-index: 900; }
+
+/* line 82, ../sass/aerovale.scss */
 .alignDados {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -76,22 +83,24 @@ html {
   padding-right: 7px;
   padding-right: 0.4375rem; }
 
-/* line 82, ../sass/aerovale.scss */
+/* line 89, ../sass/aerovale.scss */
 .direcaoAerovale {
   background-color: #ebac12;
   color: white;
   padding: 20px;
   padding: 1.25rem; }
-  /* line 86, ../sass/aerovale.scss */
+  /* line 93, ../sass/aerovale.scss */
   .direcaoAerovale small {
     margin-left: 20px;
     margin-left: 1.25rem; }
 
-/* line 92, ../sass/aerovale.scss */
+/* line 99, ../sass/aerovale.scss */
 .frmFiltroAeronave {
   position: relative;
-  z-index: 800; }
-  /* line 97, ../sass/aerovale.scss */
+  z-index: 800;
+  margin-bottom: 20px;
+  margin-bottom: 1.25rem; }
+  /* line 105, ../sass/aerovale.scss */
   .frmFiltroAeronave .frm-actions,
   .frmFiltroAeronave .frm-grupo {
     position: relative;
@@ -99,14 +108,14 @@ html {
     margin-right: 10px;
     float: left;
     min-height: 60px; }
-  /* line 105, ../sass/aerovale.scss */
+  /* line 113, ../sass/aerovale.scss */
   .frmFiltroAeronave .frm-controle {
     position: relative; }
-  /* line 109, ../sass/aerovale.scss */
+  /* line 117, ../sass/aerovale.scss */
   .frmFiltroAeronave label {
     color: #ebac12;
     font: 500 15px "CaeciliaLTStd-Bold"; }
-  /* line 119, ../sass/aerovale.scss */
+  /* line 127, ../sass/aerovale.scss */
   .frmFiltroAeronave input[type=text] {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -115,7 +124,7 @@ html {
     max-width: 6.25rem;
     height: 32px;
     height: 2rem; }
-  /* line 125, ../sass/aerovale.scss */
+  /* line 133, ../sass/aerovale.scss */
   .frmFiltroAeronave button {
     min-width: 70px;
     min-width: 4.375rem;
@@ -124,11 +133,11 @@ html {
     bottom: 10px;
     cursor: pointer;
     z-index: 10; }
-    /* line 132, ../sass/aerovale.scss */
+    /* line 140, ../sass/aerovale.scss */
     .frmFiltroAeronave button:active {
       bottom: 9px; }
 
-/* line 138, ../sass/aerovale.scss */
+/* line 146, ../sass/aerovale.scss */
 .theCombo {
   white-space: nowrap;
   overflow: hidden;
@@ -155,41 +164,41 @@ html {
   color: inherit;
   cursor: pointer; }
 
-/* line 162, ../sass/aerovale.scss */
+/* line 170, ../sass/aerovale.scss */
 .media {
   display: block; }
 
-/* line 167, ../sass/aerovale.scss */
+/* line 175, ../sass/aerovale.scss */
 .media__img {
   float: left;
   margin-right: 10px; }
 
-/* line 172, ../sass/aerovale.scss */
+/* line 180, ../sass/aerovale.scss */
 .media__img img {
   display: block; }
 
-/* line 176, ../sass/aerovale.scss */
+/* line 184, ../sass/aerovale.scss */
 .media__body {
   overflow: hidden; }
 
-/* line 181, ../sass/aerovale.scss */
+/* line 189, ../sass/aerovale.scss */
 .media__body,
 .media__body > :last-child {
   margin-bottom: 0; }
 
-/* line 186, ../sass/aerovale.scss */
+/* line 194, ../sass/aerovale.scss */
 .resultadoAerovale ul {
   margin: 0;
   padding: 0;
   list-style: none; }
-  /* line 190, ../sass/aerovale.scss */
+  /* line 198, ../sass/aerovale.scss */
   .resultadoAerovale ul li {
     padding: 20px;
     padding: 1.25rem;
     background-color: #f7f7f7;
     margin-top: 10px;
     border: 1px solid #EEE; }
-    /* line 195, ../sass/aerovale.scss */
+    /* line 203, ../sass/aerovale.scss */
     .resultadoAerovale ul li .handlerLista {
       min-height: 25px;
       line-height: 25px;
@@ -197,19 +206,19 @@ html {
       background-image: url('../images/sprites/ico/seta-close.png?1368687031');
       background-repeat: no-repeat;
       background-position: 100% 50%; }
-      /* line 204, ../sass/aerovale.scss */
+      /* line 212, ../sass/aerovale.scss */
       .resultadoAerovale ul li .handlerLista.open {
         background-image: url('../images/sprites/ico/seta-open.png?1368687094'); }
-    /* line 210, ../sass/aerovale.scss */
+    /* line 218, ../sass/aerovale.scss */
     .resultadoAerovale ul li .contentLista {
       display: none; }
-/* line 215, ../sass/aerovale.scss */
+/* line 223, ../sass/aerovale.scss */
 .resultadoAerovale table {
   width: 100%;
   background-color: #f7f7f7;
   margin-top: 10px;
   table-layout: fixed; }
-  /* line 220, ../sass/aerovale.scss */
+  /* line 228, ../sass/aerovale.scss */
   .resultadoAerovale table td {
     vertical-align: top;
     padding: 20px;

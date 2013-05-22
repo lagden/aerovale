@@ -10,6 +10,7 @@ package app.events
 		public const ON_SWAP:String = "onSwap";
 		public const ON_LIGADO:String = "onLigado"
 		public const ON_DESLIGADO:String = "onDesligado";
+		public const ON_CLEANUP:String = "onCleanup";
 		
 		public function Dispatcher()
 		{
@@ -24,6 +25,7 @@ package app.events
 		public function origem():void { dispacha(ON_ORIGEM); }
 		public function destino():void { dispacha(ON_DESTINO); }
 		public function swap():void { dispacha(ON_SWAP); }
+		public function cleanup():void { dispacha(ON_CLEANUP); }
 		public function trigger(valor:Boolean = false):void
 		{
 			(valor) ? dispacha(ON_LIGADO) : dispacha(ON_DESLIGADO);

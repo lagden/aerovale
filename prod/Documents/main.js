@@ -1,3 +1,4 @@
+var initTxt = 'Selecione um ponto no mapa ou utilize o filtro';
 var swfVersionStr = "11.1.0";
 var xiSwfUrlStr = "../Documents/playerProductInstall.swf";
 var flashvars = {};
@@ -18,9 +19,12 @@ swfobject.embedSWF(
 swfobject.createCSS("#flashContentAerovale", "display:block;text-align:left;");
 
 var fulldata = {}, cidades = {}, $destino = $('#destino'),
+    objFlash,
     $origem = $('#origem'),
     $resultadoAerovale = $('#resultadoAerovale'),
     $direcaoAerovale = $('#direcaoAerovale');
+
+$direcaoAerovale.html(initTxt);
 
 $.getJSON('../Documents/data/dadosJuninho.js', function(res) {
     $origem.find('option').remove();
@@ -64,9 +68,9 @@ window.onload = (function() {
             d = d || null;
             renderResult(o, d);
             if (o) {
-                var obj = swfobject.getObjectById("aerovale");
-                if (obj) obj.origemDestino(o, d);
-                $('html, body').animate({ scrollTop: $('#gotoAerovale').offset().top }, 500);
+                objFlash = swfobject.getObjectById("aerovale");
+                if (objFlash) objFlash.origemDestino(o, d);
+                $('html, body').animate({ scrollTop: $direcaoAerovale.offset().top }, 500);
             }
         });
     }
@@ -165,4 +169,11 @@ function destinosDe(origem) {
 }
 
 // Custom combo
-$('.theCombo').theCombo();
+var $combos = $('.theCombo').theCombo();
+$('#limparRota').on('click', function(ev) {
+    ev.preventDefault();
+    $combos.theCombo('reset');
+    $direcaoAerovale.html(initTxt);
+    $resultadoAerovale.empty();
+    // if (objFlash) objFlash.cleanup();
+});

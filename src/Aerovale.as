@@ -150,6 +150,15 @@ package
 			
 			// Filtro via javascript
 			ExternalInterface.addCallback("origemDestino", filtro);
+			
+			// Cleanup via javascript
+			ExternalInterface.addCallback("cleanup", cleanup);
+		}
+		
+		// Cleanup
+		private function cleanup():void
+		{
+			this._dispatcher.cleanup();	
 		}
 		
 		// Dispara o filtro

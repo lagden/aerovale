@@ -72,6 +72,13 @@ html{
     background-color: transparent;
 }
 
+.limparRota{
+    top: 25px;
+    right: 46px;
+    position: absolute;
+    z-index: 900;
+}
+
 .alignDados{
     @include box-sizing(border-box);
     width:700px;
@@ -92,6 +99,7 @@ html{
 .frmFiltroAeronave{
     position: relative;
     z-index: 800;
+    @include attr-size('margin-bottom', 20);
     @extend .cf;
     .frm-actions,
     .frm-grupo{

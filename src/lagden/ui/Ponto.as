@@ -140,6 +140,12 @@
 			this._dispatcher.addEventListener(_dispatcher.ON_DESTINO, this.destino);
 			this._dispatcher.addEventListener(_dispatcher.ON_LIGADO, this.ligado);
 			this._dispatcher.addEventListener(_dispatcher.ON_DESLIGADO, this.desligado);
+			this._dispatcher.addEventListener(_dispatcher.ON_CLEANUP, this.clean);
+		}
+		
+		private function clean(e:Event):void
+		{
+			this.cleanup();
 		}
 		
 		// onClick - Mostra todos os destinos do ponto
