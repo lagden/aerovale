@@ -60,6 +60,7 @@ $origem.on('change', {
 
 window.onload = (function() {
     return function() {
+        objFlash = swfobject.getObjectById("aerovale");
         $('#frmFiltroAeronaveBtn')
             .on('click', function(ev) {
             ev.preventDefault();
@@ -68,7 +69,6 @@ window.onload = (function() {
             d = d || null;
             renderResult(o, d);
             if (o) {
-                objFlash = swfobject.getObjectById("aerovale");
                 if (objFlash) objFlash.origemDestino(o, d);
                 $('html, body').animate({ scrollTop: $direcaoAerovale.offset().top }, 500);
             }
