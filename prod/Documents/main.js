@@ -175,5 +175,5 @@ $('#limparRota').on('click', function(ev) {
     $combos.theCombo('reset');
     $direcaoAerovale.html(initTxt);
     $resultadoAerovale.empty();
-    // if (objFlash) objFlash.cleanup();
+    if (objFlash) objFlash.cleanup();
 });

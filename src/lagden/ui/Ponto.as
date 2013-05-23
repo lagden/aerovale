@@ -35,7 +35,7 @@
 		private var _pontoAzul:pontoAzul;
 		private var _pino:Pino;
 		private var _content:CasaSprite;
-		private var _handler:CasaSprite;
+		private var _handler:pontoHandler;
 		private var _tooltip:ToolTip;
 		
 		public var code:String = null;
@@ -85,13 +85,14 @@
 			this._tooltip.align = "center";
 			this._tooltip.titleFormat = tf;
 			
-			this._handler = new CasaSprite();
+			this._handler = new pontoHandler();
 			this._handler.buttonMode = true;
-			with(this._handler.graphics){
-				beginFill(0x000000, 0);
-				drawRect(-this._pino.width/2, -this._pino.height/2, this._pino.width, this._pino.height);
-				endFill();
-			}
+//			with(this._handler.graphics){
+//				beginFill(0x000000, 0);
+//				drawRect(-this._pino.width/2, -this._pino.height/2, this._pino.width, this._pino.height);
+//				endFill();
+//			}
+			this._handler.alpha = 0;
 			this._handler.addEventListener(MouseEvent.MOUSE_OVER, this.showTooltip);
 			
 			this.addChild(this._content);
@@ -114,7 +115,6 @@
 		// Prepara o ponto e seus destinos
 		private function begin(e:Event):void
 		{
-			
 			for(var d:String in this._app['objs']['flights'][this.code])
 			{
 				var n:String = String(this._app['objs']['flights'][this.code][d]);
@@ -146,6 +146,10 @@
 		private function clean(e:Event):void
 		{
 			this.cleanup();
+			TweenMax.to(this._pontoAmarelo, .5, {alpha: 1});
+			TweenMax.to(this._pontoAzul, .5, {delay: .5, alpha: 0});
+			TweenMax.to(this._content, .5, { alpha: 0, onComplete: cleanup});
+			TweenMax.to(this._pino, .5, { alpha: 0});
 		}
 		
 		// onClick - Mostra todos os destinos do ponto
